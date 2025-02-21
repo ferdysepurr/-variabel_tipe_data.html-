@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Variabel dan Tipe Data dalam JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contoh Variabel dan Tipe Data dalam JavaScript</h1>
+    <h2>Informasi Pengguna</h2>
+    <div id="info"></div>
+
+    <script>
+        // Deklarasi variabel dengan berbagai tipe data
+        var nama = "John Doe";            // string
+        var umur = 30;                    // number
+        var mahasiswa = true;             // boolean
+        var alamat = null;                // null
+        var hobi = ["Membaca", "Bersepeda", "Berenang"]; // object (array)
+        var pekerjaan = {                 // object
+            pekerjaan: "Pengembang",
+            pengalaman: "5 tahun"
+        };
+
+        // Operasi dasar
+        var umurSetelahDuaTahun = umur + 2; // Operasi penjumlahan
+        var statusMahasiswa = mahasiswa ? "Ya" : "Tidak"; // Operasi ternary
+
+        // Tampilkan hasil
+        console.log("Nama: " + nama);
+        console.log("Umur saat ini: " + umur);
+        console.log("Umur setelah 2 tahun: " + umurSetelahDuaTahun);
+        console.log("Mahasiswa: " + statusMahasiswa);
+        console.log("Alamat: " + alamat);
+        console.log("Hobi: " + hobi.join(", "));
+        console.log("Pekerjaan: " + pekerjaan.pekerjaan);
+        console.log("Pengalaman: " + pekerjaan.pengalaman);
+
+        alert("Informasi Pengguna:\nNama: " + nama + "\nUmur: " + umur + "\nMahasiswa: " + statusMahasiswa + "\nAlamat: " + alamat + "\nHobi: " + hobi.join(", ") + "\nPekerjaan: " + pekerjaan.pekerjaan + "\nPengalaman: " + pekerjaan.pengalaman);
+
+        document.getElementById("info").innerHTML = 
+            "Nama: " + nama + "<br>" +
+            "Umur: " + umur + "<br>" +
+            "Mahasiswa: " + statusMahasiswa + "<br>" +
+            "Alamat: " + alamat + "<br>" +
+            "Hobi: " + hobi.join(", ") + "<br>" +
+            "Pekerjaan: " + pekerjaan.pekerjaan + "<br>" +
+            "Pengalaman: " + pekerjaan.pengalaman;
+    </script>
+</body>
+</html>
